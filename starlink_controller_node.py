@@ -56,7 +56,7 @@ class PubSubPython(Node):
         d_time = (self.get_clock().now()-self.current_time).nanoseconds*(10**-9)
 
     def PID(Kp, Ki, Kd, desired_heading, actual_heading):
-        error = desired_heading - actual_heading
+        error = desired_heading - actual_heading #i think we want to control the aacceleration but I am not sure about attitude
         Kp = 1
         Ki = 0
         Kd = 0
